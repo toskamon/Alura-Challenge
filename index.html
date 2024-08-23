@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <img src="./assets/Logo.png" alt="Logo Alura" class="logo">
+    </header>
+    <main>
+        <section class="encriptador">
+            <textarea class="encriptar" cols="30" rows="10" placeholder="Ingresa el Texto Aquí.."></textarea>
+            <div class="encriptador-aviso">
+                <img src="./assets/exclamation-circle.png" alt="Imagen-Aviso" class="exclamation">
+                <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="encriptador-contenedor">
+                <button type="button" class="btn-encriptar" onclick="encryptText()">Encriptar!</button>
+                <button type="button" class="btn-desencriptar" onclick="decryptText()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="tarjeta">
+            <div class="tarjeta-contenedor">
+                <img src="./assets/error.png" alt="Imagen dibujo de una persona" class="dibujo error" style="display: block;">
+                <p class="texto-uno">Ningún Mensaje fue Encontrado</p>
+                <p class="texto-dos">Ingrese el Texto que desea Encriptar o Desencriptar</p> 
+            </div>
+            <textarea type="mensaje" class="evaluar hidden" readonly></textarea>
+            <button type="button" class="btn-copiar hidden" onclick="copyText()">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">© Gustavo Toscano 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
